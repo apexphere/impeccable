@@ -1,0 +1,57 @@
+<!-- @dsCard group="Foundations" -->
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Color — Brand anchors</title>
+  <link rel="stylesheet" href="../tokens.css">
+  <style>
+    body { background: var(--ks-lacquer); color: var(--ks-text);
+           font-family: var(--ks-font); padding: 40px; }
+    h2 { font-family: var(--ks-font-display); font-weight: 300;
+         font-size: 2.4rem; margin: 0 0 4px; color: var(--ks-champagne); }
+    .lead { color: var(--ks-text-muted); margin: 0 0 28px; max-width: 60ch; }
+    h3 { font-family: var(--ks-font); font-weight: 600; font-size: 0.85rem;
+         letter-spacing: 0.08em; text-transform: uppercase;
+         color: var(--ks-text-faint); margin: 28px 0 12px; }
+    .ramp { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .sw { border: 1px solid var(--ks-rule); border-radius: 3px; overflow: hidden; }
+    .chip { height: 84px; }
+    .meta { padding: 10px 12px; font-size: 12px; }
+    .meta b { display: block; color: var(--ks-champagne); margin-bottom: 2px; }
+    .meta code { font-family: var(--ks-mono); color: var(--ks-text-muted);
+                 font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h2>Brand anchors</h2>
+  <p class="lead">Two anchors carry the brand — kinpaku gold for commitment and
+    voice, verdigris patina for state and contrast. Vermilion is reserved for
+    failures and warnings.</p>
+
+  <h3>Kinpaku gold</h3>
+  <div class="ramp">
+    <div class="sw"><div class="chip" style="background:var(--ks-kinpaku)"></div>
+      <div class="meta"><b>kinpaku</b><code>oklch(84% 0.19 80)</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-kinpaku-pale)"></div>
+      <div class="meta"><b>pale</b><code>oklch(86% 0.07 84)</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-kinpaku-rich)"></div>
+      <div class="meta"><b>rich</b><code>oklch(77% 0.13 82)</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-kinpaku-deep)"></div>
+      <div class="meta"><b>deep</b><code>oklch(61% 0.085 78)</code></div></div>
+  </div>
+
+  <h3>Verdigris patina</h3>
+  <div class="ramp">
+    <div class="sw"><div class="chip" style="background:var(--ks-patina)"></div>
+      <div class="meta"><b>patina</b><code>oklch(70% 0.12 188)</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-patina-pale)"></div>
+      <div class="meta"><b>pale</b><code>oklch(82% 0.07 188)</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-patina-deep)"></div>
+      <div class="meta"><b>deep</b><code>oklch(49% 0.08 188)</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-vermilion)"></div>
+      <div class="meta"><b>vermilion</b><code>oklch(58% 0.15 35)</code></div></div>
+  </div>
+  <script src="../card.js"></script>
+</body>
+</html>

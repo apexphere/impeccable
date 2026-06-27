@@ -1,0 +1,60 @@
+<!-- @dsCard group="Foundations" -->
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Color — Surfaces & text</title>
+  <link rel="stylesheet" href="../tokens.css">
+  <style>
+    body { background: var(--ks-lacquer); color: var(--ks-text);
+           font-family: var(--ks-font); padding: 40px; }
+    h2 { font-family: var(--ks-font-display); font-weight: 300;
+         font-size: 2.4rem; margin: 0 0 4px; color: var(--ks-champagne); }
+    .lead { color: var(--ks-text-muted); margin: 0 0 28px; max-width: 60ch; }
+    h3 { font-family: var(--ks-font); font-weight: 600; font-size: 0.85rem;
+         letter-spacing: 0.08em; text-transform: uppercase;
+         color: var(--ks-text-faint); margin: 28px 0 12px; }
+    .ramp { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .sw { border: 1px solid var(--ks-rule); border-radius: 3px; overflow: hidden; }
+    .chip { height: 72px; }
+    .meta { padding: 9px 11px; font-size: 11px; }
+    .meta b { display: block; color: var(--ks-champagne); margin-bottom: 2px; }
+    .meta code { font-family: var(--ks-mono); color: var(--ks-text-muted);
+                 font-size: 10px; }
+    .text-row { display: flex; flex-direction: column; gap: 6px;
+                border: 1px solid var(--ks-rule); border-radius: 3px;
+                padding: 18px 20px; }
+    .text-row span { font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+  <h2>Surfaces &amp; text</h2>
+  <p class="lead">Warm-black lacquer carries every surface. The text ramp runs
+    near-neutral and bright so copy reads crisp on lacquer instead of mushing
+    into the warm floor.</p>
+
+  <h3>Surfaces</h3>
+  <div class="ramp">
+    <div class="sw"><div class="chip" style="background:var(--ks-lacquer-deep)"></div>
+      <div class="meta"><b>lacquer-deep</b><code>4% 0.004 95</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-lacquer)"></div>
+      <div class="meta"><b>lacquer</b><code>7% 0.006 95</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-lacquer-raised)"></div>
+      <div class="meta"><b>raised</b><code>11% 0.006 95</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-graphite)"></div>
+      <div class="meta"><b>graphite</b><code>15% 0.008 95</code></div></div>
+    <div class="sw"><div class="chip" style="background:var(--ks-graphite-2)"></div>
+      <div class="meta"><b>graphite-2</b><code>19% 0.008 95</code></div></div>
+  </div>
+
+  <h3>Text ramp</h3>
+  <div class="text-row">
+    <span style="color:var(--ks-champagne)">champagne: headlines &amp; strong</span>
+    <span style="color:var(--ks-text)">text: body</span>
+    <span style="color:var(--ks-text-muted)">text-muted: captions &amp; meta</span>
+    <span style="color:var(--ks-text-faint)">text-faint: subdued</span>
+    <span style="color:var(--ks-text-mute-deep)">text-mute-deep: disabled</span>
+  </div>
+  <script src="../card.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- @dsCard group="Foundations" -->
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Typography — Type scale</title>
+  <link rel="stylesheet" href="../tokens.css">
+  <style>
+    body { background: var(--ks-lacquer); color: var(--ks-text);
+           font-family: var(--ks-font); padding: 40px; }
+    .lead { color: var(--ks-text-muted); margin: 0 0 32px; max-width: 60ch; }
+    .row { display: grid; grid-template-columns: 120px 1fr;
+           gap: 24px; align-items: baseline; padding: 14px 0;
+           border-top: 1px solid var(--ks-rule); }
+    .label { font-family: var(--ks-mono); font-size: 11px;
+             letter-spacing: 0.12em; text-transform: uppercase;
+             color: var(--ks-text-faint); }
+    .display  { font-family: var(--ks-font-display); font-weight: 300;
+                font-size: var(--ks-type-display-size);
+                line-height: var(--ks-type-display-line);
+                letter-spacing: var(--ks-type-display-track);
+                color: var(--ks-champagne); }
+    .headline { font-family: var(--ks-font); font-weight: 600;
+                font-size: var(--ks-type-headline-size);
+                line-height: var(--ks-type-headline-line);
+                color: var(--ks-champagne); }
+    .title    { font-size: var(--ks-type-title-size);
+                font-weight: var(--ks-type-title-weight);
+                line-height: var(--ks-type-title-line);
+                color: var(--ks-champagne); }
+    .body     { font-size: var(--ks-type-body-size);
+                line-height: var(--ks-type-body-line); }
+    .eyebrow  { font-family: var(--ks-mono);
+                font-size: var(--ks-type-eyebrow-size);
+                letter-spacing: var(--ks-type-eyebrow-track);
+                text-transform: uppercase; color: var(--ks-kinpaku); }
+    .mono     { font-family: var(--ks-mono);
+                font-size: var(--ks-type-mono-size);
+                letter-spacing: var(--ks-type-mono-track);
+                text-transform: uppercase; color: var(--ks-text-muted); }
+  </style>
+</head>
+<body>
+  <p class="lead">Three faces: Alumni Sans Pinstripe (display), Albert Sans
+    (body/UI), and a mono stack. The hero h1 reads thin (300); section h2s read
+    heavier (600) to anchor each block.</p>
+
+  <div class="row"><span class="label">display</span><span class="display">Impeccable</span></div>
+  <div class="row"><span class="label">headline</span><span class="headline">Section heading</span></div>
+  <div class="row"><span class="label">title</span><span class="title">Card &amp; panel heading</span></div>
+  <div class="row"><span class="label">body</span><span class="body">Body copy runs at 1.02rem with a 1.8 line-height for comfortable long-form reading.</span></div>
+  <div class="row"><span class="label">eyebrow</span><span class="eyebrow">Small label above a title</span></div>
+  <div class="row"><span class="label">mono</span><span class="mono">Terminal · audit lines</span></div>
+  <script src="../card.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Code treatment</title>
+  <link rel="stylesheet" href="../tokens.css">
+  <style>
+    body { background: var(--ks-lacquer); color: var(--ks-text);
+           font-family: var(--ks-font); padding: 40px; line-height: 1.8; }
+    h2 { font-family: var(--ks-font-display); font-weight: 300;
+         font-size: 2.4rem; margin: 0 0 4px; color: var(--ks-champagne); }
+    .lead { color: var(--ks-text-muted); margin: 0 0 28px; max-width: 60ch; }
+    p { max-width: 64ch; }
+
+    /* Inline code chip — reads the --ks-code-* tokens. */
+    code.inline {
+      font-family: var(--ks-mono); color: var(--ks-code-fg);
+      background: var(--ks-code-bg); border-radius: var(--ks-code-radius);
+      padding: var(--ks-code-pad); font-size: 0.9em;
+    }
+    /* Block / CLI terminal. */
+    pre.block {
+      font-family: var(--ks-mono); color: var(--ks-code-block-fg);
+      background: var(--ks-code-block-bg);
+      border: 1px solid var(--ks-code-block-border);
+      border-radius: var(--ks-code-block-radius);
+      padding: 16px 18px; margin: 20px 0 0; overflow-x: auto; font-size: 13px;
+    }
+    pre.block .cmd { color: var(--ks-code-cmd); }
+  </style>
+</head>
+<body>
+  <h2>Code</h2>
+  <p class="lead">One treatment site-wide. Inline code is a neutral graphite
+    chip; blocks are a deep-lacquer terminal with a hairline border. Gold is only
+    for code that is itself a command link.</p>
+
+  <p>Install with the <code class="inline">npx impeccable skills install</code>
+    command, then run a scan against any file or URL.</p>
+
+  <pre class="block"><span class="cmd">npx impeccable detect</span> src/
+<span class="cmd">npx impeccable live</span>
+<span class="cmd">npx impeccable skills install</span></pre>
+  <script src="../card.js"></script>
+</body>
+</html>
